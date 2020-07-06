@@ -1,0 +1,57 @@
+.App > *:not(:first-child) {
+  width: 90%;
+  margin: auto;
+}
+
+.PostForm{
+  border-bottom: 1px solid grey;
+}
+
+.PostForm form {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.PostForm form > button{
+  padding: 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .PostForm form {
+    flex-direction: column;
+  }
+
+  .PostForm form > * {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.PostForm form > * {
+  margin-bottom: 1rem;
+}
+
+tbody {
+  display: table;
+  widtH: 100%;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App .Post {
+  border-bottom: 1px solid grey;
+}
+
+table {
+  border-collapse: collapse;
+} 

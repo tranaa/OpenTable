@@ -75,7 +75,7 @@ class PaginationButtons extends Component {
         <button className="FirstPageBtn" aria-label="First Page" onClick={this.onFirstPage} disabled={page === 1}>{"<<"}</button>
         <button className="PrevPageBtn" aria-label="Previous Page" onClick={this.onPrevPage} disabled={page === 1}>{"<"}</button>
         <div className="CurrentPage" aria-label="Current Page">{page}</div>
-        <button className="NextPageBtn" aria-label="Next" onClick={this.onNextPage} disabled={page === maxPage}>{">"}</button>
+        <button className="NextPageBtn" aria-label="Next Page" onClick={this.onNextPage} disabled={page === maxPage}>{">"}</button>
         <button className="LastPageBtn" aria-label="Last Page" onClick={this.onLastPage} disabled={page === maxPage}>{">>"}</button>
       </div>
     )

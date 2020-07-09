@@ -32,13 +32,10 @@ class SearchForm extends Component {
             <div className="SearchForm">
                 <h2>Find me some food</h2>
                 <form onSubmit={this.onSubmit}>
-                    <label class="lblName" for="name" style={{display:"none"}}>Search By Name</label>
-                    <input placeholder="name" name="name" onChange={this.onChange} type="text" value={this.state.title} />
-                    <label class="lblCity" for="city" style={{display:"none"}}>Search By City</label>
-                    <input placeholder="city" name="city" onChange={this.onChange} type="text" value={this.state.city} />
-                    <label class="lblAddress" for="address" style={{display:"none"}}>Search By Address</label>
-                    <input placeholder="address" name="address" onChange={this.onChange} type="text" value={this.state.address} />
-                    <button type="submit">Search</button>
+                    <input placeholder="Search By Name" name="name" onChange={this.onChange} type="text" value={this.state.title} aria-label="Search By Name" />
+                    <input placeholder="Search By City" name="city" onChange={this.onChange} type="text" value={this.state.city} aria-label="Search By City" />
+                    <input placeholder="Search By Address" name="address" onChange={this.onChange} type="text" value={this.state.address} aria-label="Search By Address" />
+                    <button type="submit" name="search" className="search" aria-label="Search for results">Search</button>
                 </form>
             </div>
         )

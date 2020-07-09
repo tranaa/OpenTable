@@ -72,11 +72,11 @@ class PaginationButtons extends Component {
     const { maxPage } = this.state;
     return (
       <div className="PaginationButtons">
-        <button className="FirstPageBtn" onClick={this.onFirstPage} disabled={page === 1}>{"<<"}</button>
-        <button className="PrevPageBtn" onClick={this.onPrevPage} disabled={page === 1}>{"<"}</button>
-        <div className="CurrentPage">{page}</div>
-        <button className="NextPageBtn" onClick={this.onNextPage} disabled={page === maxPage}>{">"}</button>
-        <button className="LastPageBtn" onClick={this.onLastPage} disabled={page === maxPage}>{">>"}</button>
+        <button className="FirstPageBtn" aria-label="First Page" onClick={this.onFirstPage} disabled={page === 1}>{"<<"}</button>
+        <button className="PrevPageBtn" aria-label="Previous Page" onClick={this.onPrevPage} disabled={page === 1}>{"<"}</button>
+        <div className="CurrentPage" aria-label="Current Page">{page}</div>
+        <button className="NextPageBtn" aria-label="Next" onClick={this.onNextPage} disabled={page === maxPage}>{">"}</button>
+        <button className="LastPageBtn" aria-label="Last Page" onClick={this.onLastPage} disabled={page === maxPage}>{">>"}</button>
       </div>
     )
   }

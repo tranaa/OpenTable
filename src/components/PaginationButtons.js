@@ -23,7 +23,7 @@ class PaginationButtons extends Component {
   componentDidUpdate(prevProps) {
     const { total_entries : oldTotalEntries, per_page: oldPerPage} = prevProps.posts;
     const { total_entries, per_page } = this.props.posts;
-    if(oldPerPage != per_page || oldTotalEntries != total_entries){
+    if(oldPerPage !== per_page || oldTotalEntries !== total_entries){
       this.setState({maxPage: Math.ceil(total_entries/per_page)});
     }
   }

@@ -83,12 +83,14 @@ class PaginationButtons extends Component {
 }
 
 PaginationButtons.propTypes = {
-  fetchRestaurants: PropTypes.func.isRequired
+  fetchRestaurants: PropTypes.func.isRequired,
+  filters: PropTypes.object.isRequired,
+  posts: PropTypes.object.isRequired
 }
 
 const mapStateToProps = state => ({
   posts: state.posts.items,
-  filters: state.posts.filters
+  filters: state.posts.filters,
 });
 
 export default connect(mapStateToProps, {fetchRestaurants, updateFilters})(PaginationButtons);

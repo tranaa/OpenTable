@@ -43,7 +43,8 @@ class SearchForm extends Component {
 }
 
 SearchForm.propTypes = {
-    fetchRestaurants: PropTypes.func.isRequired
+    fetchRestaurants: PropTypes.func.isRequired,
+    updateFilters: PropTypes.func.isRequired
 }
 
 export default connect(null, {fetchRestaurants, updateFilters})(SearchForm);

@@ -42,12 +42,11 @@ class Restaurants extends Component {
 }
 
 Restaurants.propTypes = {
-    newPost: PropTypes.object
+    posts: PropTypes.object.isRequired,
 }
 
 const mapStateToProps = state => ({
     posts: state.posts.items,
-    newPost: state.posts.item
 });
 
 export default connect( mapStateToProps, {} )( Restaurants );

@@ -3,33 +3,38 @@
   margin: auto;
 }
 
-.PostForm{
+.SearchForm{
   border-bottom: 1px solid grey;
 }
 
-.PostForm form {
+.SearchForm form {
   display: flex;
   align-items: baseline;
   flex-direction: row;
 }
 
-.PostForm form > button{
+.SearchForm form > button{
   padding: 0;
+}
+
+.App .Restaurants > table {
+  width: 100%;
+  margin: 0;
 }
 
 
 @media only screen and (max-width: 768px) {
-  .PostForm form {
+  .SearchForm form {
     flex-direction: column;
   }
 
-  .PostForm form > * {
+  .SearchForm form > * {
     width: 100%;
     box-sizing: border-box;
   }
 }
 
-.PostForm form > * {
+.SearchForm form > * {
   margin-bottom: 1rem;
 }
 
@@ -48,10 +53,23 @@ tbody {
   color: white;
 }
 
-.App .Post {
+.App .Restaurant {
   border-bottom: 1px solid grey;
 }
 
 table {
   border-collapse: collapse;
 } 
+
+/* PaginationButtons */
+
+.PaginationButtons {
+  display: flex;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+
+.PaginationButtons > .CurrentPage {
+  padding: 0 1rem;
+}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
-import Posts from './components/Posts';
-import PostForm from './components/Postform';
+import Restaurants from './components/Restaurants';
+import SearchForm from './components/SearchForm';
 import { Provider } from 'react-redux';
 import store from './store';
 
@@ -11,10 +11,10 @@ class App extends Component {
       <Provider store={store}>
         <div className="App">
           <header className="App-header">
-              <h1>Open Table</h1>
+              <h1>OPEN TABLE</h1>
           </header>
-          <PostForm />
-          <Posts />  
+          <SearchForm />
+          <Restaurants />  
         </div>
       </Provider>
     );

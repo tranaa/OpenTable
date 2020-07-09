@@ -1,7 +1,8 @@
-import { FETCH_RESTAURANTS } from '../actions/types';
+import { FETCH_RESTAURANTS, UPDATE_FILTERS } from '../actions/types';
 
 const initialState = {
-    items: []
+    items: [],
+    filters: {}
 };
 
 export default function(state = initialState, action) {
@@ -10,6 +11,11 @@ export default function(state = initialState, action) {
             return {
                 ...state,
                 items: action.payload
+            };
+        case UPDATE_FILTERS:
+            return {
+                ...state,
+                filters: action.payload
             };
         default:
             return state;
